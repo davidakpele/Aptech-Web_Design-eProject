@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./asset/icon.png">
+    <link rel="stylesheet" type="text/css" href="./css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./ionicons/docs/css/ioniconss.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/custom-style.css">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" type="text/css" href="./fonts/all.css">
+    <link rel="stylesheet" type="text/css" href="./css/custom.css">
+    <link rel="stylesheet" type="text/css" href="./css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="./css/queries.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css">
+    <script src="./js/action.js" type="text/javascript"></script>
+    <script src="./js/jquery.min.js" type="text/javascript"></script>
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="./js/slick.min.js" type="text/javascript"></script>
+<style>
+    .body-table{
+        padding-bottom: 32px;
+        width:100%;
+        max-width: 680px;
+    }
+    .ckechout{
+        margin:0%;
+
+    }
+    .badge{
+        color: #fff;
+    background-color: #e91e63;
+    font-size: 13px;
+    border-radius: 12px 12px 12px;
+    }
+</style>
+</head>
+
+<body>
+   	<!-- Section: Header -->
+	<header class="header" style="text-decoration: none;">
+		<div class="container">
+			<div class="wrapper">
+				<div class="header-item-left">
+					<h1>
+						<a href="./index.html" class="brand" id="logoheader">Jammy Cake</a>
+					</h1>
+				</div>
+				<!-- Section: Navbar Menu -->
+				<div class="header-item-center">
+					<div class="overlay"></div>
+					<nav class="menu">
+						<div class="menu-mobile-header">
+							<button type="button" class="menu-mobile-arrow">
+								<i class="ion ion-ios-arrow-back"></i>
+							</button>
+							<div class="menu-mobile-title"></div>
+							<button type="button" class="menu-mobile-close">
+								<i class="ion ion-ios-close"></i>
+							</button>
+						</div>
+						<ul class="menu-section">
+							<li>
+								<a href="./index.html">Home</a>
+							</li>
+							<li>
+								<a href="./about-us.html">About Us</a>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="#">Products
+									<i class="ion ion-ios-arrow-down"></i>
+								</a>
+								<div class="menu-subs menu-column-1">
+									<ul>
+										<li>
+											<a href="engagement-page.html" style="text-decoration:none;">Engagement Products</a>
+											<li>
+												<li>
+													<a href="anniversary-page.html" style="text-decoration:none;">Anniversary Products</a>
+												</li>
+												<li>
+													<a href="graduation-product-page.html" style="text-decoration:none;">Graduation Products</a>
+												</li>
+												<li>
+													<a href="birthday-product-page.html" style="text-decoration:none;">Birthday Products</a>
+												</li>
+												<li>
+													<a href="marriage-product-page.html" style="text-decoration:none;">Marriage Products</a>
+												</li>
+
+									</ul>
+								</div>
+								</li>
+								<li class="menu-item-has-children">
+									<a href="#">Accounts
+										<i class="ion ion-ios-arrow-down"></i>
+									</a>
+									<div class="menu-subs menu-column-1">
+										<ul>
+											<li>
+												<a href="./register.html">Registration</a>
+											</li>
+											<li>
+												<a href="./login.html">Login</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="./contact-us.html">Contact Us</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header-item-right">
+						<!-- single info -->
+						<a href="./cart.html" class="nav nav-bar">
+							<div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+								<span class="cart-info__icon mr-lg-3">
+									<i class="fas fa-shopping-cart"></i>
+								</span>
+								<p class="mb-0 text-capitalize">
+									<span id="item-count"> </span>
+									<span class="badge"> 0</span>
+									<span class="item-total"></span>
+								</p>
+							</div>
+						</a>
+					<!-- end of single info -->
+					<button type="button" class="menu-mobile-trigger">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</header> 	
+	<!-- Section: Main -->
+    <div class="container" style="padding-top:8em">
+        <div class="row">
+                <table class="table table-hover">
+                    <thead class="bg-primary">
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Qty</th>
+                            <th class="text-center">Sales Price</th>
+                            <th class="text-center"><span style="font-size:14px;">Wish Text</span></th>
+                            <th class="text-center">Egg Qty</th>
+                            <th  class="text-center"><span style="font-size:14px;">Product Cod</span></th>
+                        </tr>
+                    </thead>
+                    <tbody class="body-table bg-default">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./js/function.js"></script>
+    <script src="./js/script.js" ></script>
+</body>
+
+</html>
